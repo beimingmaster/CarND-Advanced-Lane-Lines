@@ -49,7 +49,7 @@ code of calibrate camera is in the function "calibrate_camera"
 
 effection of undistort:
 
-![undistort of calibrate image]('output_images/undistort-camera.png')
+![undistort of calibrate image](output_images/undistort-camera.png)
 
 ### Pipeline (single images)
 
@@ -57,7 +57,7 @@ effection of undistort:
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
 
-![undistort of example image]('output_images/undistort-example.png')
+![undistort of example image](output_images/undistort-example.png)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
@@ -67,19 +67,19 @@ i combined sobel, hls and lab color space fetures to create a thresholded binary
 
 thresholded binary image of sobel features:
 
-![sobel feature image]('output_images/sobel_feature.png')
+![sobel feature image](output_images/sobel_feature.png)
 
 - code of hls thresholded image is in the function "apply_hls_threshold"
 
 thresholded binary image of hls features:
 
-![hls feature image]('output_images/hls_feature.png')
+![hls feature image](output_images/hls_feature.png)
 
 - code of lab thresholded image is in the function "apply_lab_threshold"
 
 thresholded binary image of hls features:
 
-![hls feature image]('output_images/lab_feature.png')
+![hls feature image](output_images/lab_feature.png)
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -89,13 +89,14 @@ I chose the hardcode the source and destination points in the following manner:
 
 ```python
 src = np.float32([(575,464),
-                  (707,464), 
-                  (258,682), 
-                  (1049,682)])
-    dst = np.float32([(450,0),
-                  (w-450,0),
-                  (450,h),
-                  (w-450,h)])```
+  (707,464), 
+  (258,682), 
+  (1049,682)])
+dst = np.float32([(450,0),
+  (w-450,0),
+  (450,h),
+  (w-450,h)])
+```
 
 This resulted in the following source and destination points:
 
@@ -108,15 +109,15 @@ This resulted in the following source and destination points:
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-![perspective transform]('./test_images/perspective_transform.png')
+![perspective transform](output_images/perspective_transform.png)
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
 i identified lane line and draw them in two functions, one function called "sliding_window_polyfit", another function called "draw_lane", for example:
 
-![lane line identification]('./test_images/lane_line_identify.png')
+![lane line identification](output_images/lane_line_identify.png)
 
-![lane line draw]('./test_images/lane_line_draw.png')
+![lane line draw](output_images/lane_line_draw.png)
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -126,7 +127,7 @@ I did this in the function "calc_curv_rad_and_center_dist"
 
 I implemented this step in the function "draw_line"
 
-![curv and radius example]('./test_images/radius_curv_lane_line.png')
+![curv and radius example](output_images/radius_curv_lane_line.png)
 
 ---
 
