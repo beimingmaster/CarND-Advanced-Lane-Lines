@@ -139,7 +139,7 @@ Here's a [link to my project video result](./output_videos/project_video.mp4)
 
 Here's a [link to my challenge video result](./output_videos/challenge_video.mp4)
 
-Here's a [link to my challenge video result](./output_videos/harder_challenge_video.mp4)
+Here's a [link to my harder challenge video result](./output_videos/harder_challenge_video.mp4)
 
 ---
 
