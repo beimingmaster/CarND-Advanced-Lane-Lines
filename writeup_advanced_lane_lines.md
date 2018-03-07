@@ -49,7 +49,7 @@ code of calibrate camera is in the function "calibrate_camera"
 
 effection of undistort:
 
-![undistort of calibrate image](output_images/undistort-camera.png)
+![undistort of calibrate image](output_images/undistort_camera.png)
 
 ### Pipeline (single images)
 
@@ -57,7 +57,7 @@ effection of undistort:
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
 
-![undistort of example image](output_images/undistort-example.png)
+![undistort of example image](output_images/undistort_example.png)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
