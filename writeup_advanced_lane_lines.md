@@ -149,4 +149,6 @@ Here's a [link to my harder challenge video result](./output_videos/harder_chall
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further. 
 
-in some frame of video, correctness of lane line identifying have more improvements, it needs more smooth algorithm to do with it. 
+- in high light environments (harder challenge video), effection of pipeline is very weak. it needs adguest algorithm, fox example use other color space feature or combined many features to do with it
+
+- in perspetive transforming, we use magic numbers (src, dst), it should use more intelligent algorithm, fox example, deep learning to find them 
